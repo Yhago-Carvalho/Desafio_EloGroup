@@ -1,0 +1,400 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="744,5111" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="44">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>CsvHelper.TypeConversion</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="37">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>CsvHelper</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Extrair dados de um documento .EXE e completar no controle de pedidos" DisplayName="Projeto EloGroup" sap:VirtualizedContainerService.HintSize="754,5046" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="Dados_cadastro">
+        <Variable.Default>
+          <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="New System.Data.DataTable" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Name="Numero_lote" />
+      <Variable x:TypeArguments="x:String" Name="lote" />
+      <Variable x:TypeArguments="x:String" Name="strLote" />
+      <Variable x:TypeArguments="x:Int32" Name="intLote" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Abrindo a página contendo as informações do desafio" sap:VirtualizedContainerService.HintSize="712,722" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="94b53795-8dbe-4f93-8d7f-408096c324bb" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,506" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Digitando o Token gerado" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="94b53795-8dbe-4f93-8d7f-408096c324bb" Text="0cbc82bcdbf5b458f36bfa48f32e95f2" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/" DesignTimeRectangle="144, 612, 1078, 38" ElementType="InputBox" FriendlyName="'INPUT token'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" Guid="513dfcda-7c04-4f9a-9cbb-5b08bc49b3a8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABDoAAAAqCAYAAABStDsxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASDSURBVHhe7dwxj9NIGIDh+8G0lHTbbUe75Rb8BSQafsFpJQ6KQxQUCAFCogHRRD5/9tgZj8fZzRIWx/c80icRYk8SU80rm78aAAAAgI0QOgAAAIDNmISO7z9+Nu/ef2hu3rxt/v7nX2OMMcYYY4wxxphVTrSLaBjRMnJj6Ig34qAvX781u90u/S0AAADA+kS7iIYRLSOPHWPoiAoSBwAAAACci2gZ0TQGY+iIAuJODgAAAOCcRMuIpjEYQ0c83wIAAABwbvKmIXQAAAAAZ03oAAAAADZD6AAAAAA2Q+gAAAAANkPoAAAAADZD6AAAAAA2Q+gAAAAANkPoAAAAADbjD4WOz83zyyfNo+vX6fXd3Fy351y+bD6m1/9Ln142F4+fNs8/pdcAAADA6ISh43Vz9fhJ82g2tU250HFvQgcAAAAsOnnouHqVXg5ePeuDx5FR4066tZ81N+nlOfn44un9oo3QAQAAAIt+f+gI3eZ84b1fIXQAAAAAmYcJHa3usZPxro7+0ZWLF5/T61A8+tIeOz1nukb35/z4PHiksJKvdVB5fBEgpp81jQxdsCjXPxgj0mM7S5833AFTey/M1h6uWx58ims5WWN/7Se/6z7RBQAAAFbmwULH9A6GMnT05+bhozs+NuALoaNTu6NjFgJu+/9Ayu/dHn+93/TXP3O//vGho1e7o6P/zdPz+hhRRpzhmNpvm/87dGsU1z6u7f6Y+fUHAACAc/RgoaMLBAuho7bpD2VkuEvoiGNmG/ZaEBkcihLde+V5le9+ktCxdP2Kvx/XTsGiFksOfp9aHFn+NwAAAIBzsoo7OqpxonV86Eib+PZ7zGchdLS6deOYMhB06+dr7OfkoaMaVXqT65PWvqhEjjD+ltlMQ0d5vYUOAAAAtuDBQsdks/6bQ8fiXSUHZZFk+IxY/5bN/58JHe3ry/b8yvFL13JP6AAAAGC7HiZ0LASJPHTMN9kpPBwVOirHHCtf8z7BInRrHHvesY+upN9a/P7bg4XQAQAAwHb99tDRb8bLTX+x2R7uUsg2393Gu/27g6GjFiK6yFB8j/a4q2JjPyrfm8STFFuKAHBzncWF9N33n9dfh9tCRy3S9L95el73m/PPL37zLHak7zMNGe13Gq+b0AEAAMB2nTx07P9PiDTVuysqm+20QR/Oi/fKsDELHa1+ox+TbfZT7NjPNChMFJ87PzbFjuyYaiTIzy9iRF22bhYYpmu1U16/2dr7daZ3fWRrVI4XOgAAANiiE4aO06uFDQAAAIAlKw4d9UdhAAAAAJasI3TEoxaTOzfS4xgepQAAAACOsJI7Oir/v4fIAQAAABxpJaEDAAAA4NcJHQAAAMBmCB0AAADAZggdAAAAwGYIHQAAAMBmVEPHzZu3zW63S68AAAAA1i9aRjSNwRg63r3/0Hz5+i29AgAAAFi/aBnRNAZj6Pj+42dXQOIAd3YAAAAAaxbtIhpGtIxoGoMxdIR4IypIHBTPtxhjjDHGGGOMMcascaJdRMPII0eYhA4AAACAcyZ0AAAAABvRNP8BkkLzU4tBRkoAAAAASUVORK5CYII=" InformativeScreenshot="236d8a13f51d54acd713387d484065f7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="144, 585, 33, 19" ElementType="Text" FriendlyName="'Token'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' aaname='Token' check:text='Token' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAXCAYAAACMLIalAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEESURBVEhL7ZRBCoQwDAD3Kx724LPEgy/xoD8R+hTFZwj6iKxp0pq2omV1WQ8dEEzTmiENvuCBJKlYklQsSSqWS1KzqiBrRo7ug6T6FrJ3vvO0MOgN+/xWSjA0ORRq4eiYP0qNUMvuCQlHalJQrHl7lmO/4+YM1qFcBd3ESeZEaoGudCVlfpMi8brXyysYi2I4HqWCeX3VZ8ReHXPOcCwlPmbBDsgCjQrEN1kDSlK3gpzuqDu751LOxxGvAF6BJ27XnYc6dyRsuKFTPB+iEK7LzkmuS+kD7tXI/FaAZs8W01cSDjBygxRCYuYaZM4twPtMZ/1/H+/7SuoJJKlYklQsD5QC+ADMfmqF1UJCRwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Clicando em iniciar" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94b53795-8dbe-4f93-8d7f-408096c324bb" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/" DesignTimeRectangle="144, 666, 68, 38" ElementType="Button" FriendlyName="'Iniciar'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Iniciar' check:text='Iniciar' /&gt;" Guid="6310ebc8-b25a-45df-afec-4716535e3341" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAqCAYAAAAQ0R0WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGlSURBVGhD7ZoxUoRAEEVNPJeH2tAqT8I1DPcGmpIZmphsaDj2Rz40Qze7ulIq/Ff1A+iB2X47QzQ3RSwiQWeYCHp6LeWuKeX2wQr3+wp6Ru9w4BkEobBHMXXgwEsaBMFe9MAeAxdkEKTVMwYuyCAoGrjnEAlKQiQoCZGgJESCkhAJSkIkKAmRoCREgpKQXxF0fLcJ3+JancbGFRt/CGprhlwtqLVn2+e4lkWCNhAiQUnIjwvC9jm99FuDVFuEY3iNHOx6Qr8Fu/dU2xFzehpX43jOX89zacgqgoC/hzH+h9aC2IxvtO2l1IIg8vg4Xnd19wfwXdeuarKOINcQ0q0O18REkDV7srJv2qcWNIvNDSi3FvbdkNW2mB+zKAgNLjQUCZptR2MiaEnohSH/ThDmm4yPVtCmBH1li1UyonvbE2TpmjJ84+FHOpDZrShj04IQSiJ8Z91w/f1p/voK2mqIBCUhEpSESFASIkFJiAQlIRKUhEhQEiJBScggSMdfxoTHX3SAakx4gEpH8D4DB+ERPIAC7O1RFHpG714OmAgScyRokVI+AO/qyU2m507UAAAAAElFTkSuQmCC" InformativeScreenshot="dc5544ca8f355c98655808c3bddb50fb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="128, 503, 1110, 217" ElementType="InputBox" FriendlyName="'Começar desafio'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div' idx='7' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' aaname='                Para iniciar o desafio, preencha o campo com o token recebido por e-mail e clique no botão abaixo:                ' tag='DIV' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMSSURBVDhPZVNvTI1xFH7uvZVKLGXrpqSr8cFqFcsWk7YKm82fSnc1a6Fu61YrW+GKW1OIS5NoYm01WURCsUXC8MWfZdKM1SfLNH83fMjweOouHzjvnvd9t985zznnOb+DKVvk/hjT9esCHKeAO+eBVy1CNvBgFrBP5xuF5YJF8BbcliLMAXzkseU2MPAEGH9pMnHAw4MOHx8uDTZzpt/0H3L7IrwVnglHhVCs1dtfbPXAjkHg85inJ/tiY9mVn8/ylBQW5uWxYq+Laek2zp4dRLlP4btQMPlXAWQOAB++6uCNvz9v7d/PvdXVtGZlsbX1HK3WXczOrmJy8gYaDH8JJiqqQCIQ1gPcH1XmYYuF37y8+CI0lOmRkUxSBR0dHWxp6WJz8zWWlzsYFmahh4fnBME3IUcPcruBr70REbx67BivR0fzkzLckAbLAgNZUFgokgvs6enmgQMnmJPjZHx8Er2MhvEAYA8OAk2Pgd93N2/m65ER1qv0ewkJ/KhKLoooWiJaRF5ZWUmX6wzt9lrudNRwoY83k4GbOALceG4w8JHTydGxMdapijKbja1qZ0QEbcJCTWOT1crOzsu81XeXpXk2bjUZmQ88QS3Q/VQE3VK9obFRYmUzZO5cBihot4I1GTYLiyXuqjVraCsoYMXq1TylFrcBj1GoFi4Bv5xRUSwrK2NRURFjYmImlQ6UsI3z5/OZ2jktwo0a756qKp5ITeVhnetWXUMmkN4FfKydMYNBAQEak4EmsUeob3NwMEtzc3k2Lo79CmgPCWFzSQld4eHcoXuQBBQjEgg8Dly2ymEi6xRS09KYkZExqUmlKjupCntVSbuvL+uUYCvwcB4QgTp5bwASw4HhqeBZfn7MysxkfUMDB4eG2NffzyaHg21mMxt1XgK8WwFsku9fMxqBjAkS7QVLvb25fcECtkvQK3Y7z0i0Qwp2KXOxdkHjsytmmipwm9n9Ma0EVsqhsxp4XwP8bBKZ2qNTItu0J9rK3nhgnXy9gt0x/1uINFmirhKAk2qtcz3QpYz1UdqXUOCfOOAPd/Rqo6OCYEIAAAAASUVORK5CYII=" InformativeScreenshot="903f7a0f7852cbd16b59a3cbc2ebbee6.png" Selector="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge'/&gt;" Url="https://marcelstein.com/elochallenge/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Página de Controle de Pedidos" sap:VirtualizedContainerService.HintSize="712,4161" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="156e7335-b2ae-47f8-bb53-068dc705f3c6" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="678,3945" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="tab_dados" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText sap2010:Annotation.AnnotationText="Foi criada a variável &quot;strLote&quot; para armazenar o valor do lote. Foi adicionado um tempo de 5 segundos, para dar tempo da página carregar." DelayBefore="2" DisplayName="Armazenando o Número do lote" sap:VirtualizedContainerService.HintSize="636,213" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="156e7335-b2ae-47f8-bb53-068dc705f3c6" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/starttest.php?token=0cbc82bcdbf5b458f36bfa48f32e95f2" DesignTimeRectangle="323, 407, 898, 24" ElementType="Text" FriendlyName="'156535'" FullSelectorArgument="&lt;webctrl id='lblnumLote' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='lblnumLote' tag='DIV' type='' /&gt;" Guid="f22fd7e8-d980-48d7-ba0f-2d282781c5b9" InformativeScreenshot="2b709ae94976c0df7a3e1e7a323be8ce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="144, 407, 180, 24" ElementType="Text" FriendlyName="'Número do lote'" FullSelectorArgument="&lt;webctrl aaname='Número do lote:' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Número do lote:' tag='DIV' type='' check:text='Número do lote:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAcCAYAAADSvnU/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKtSURBVHhe7ZY7jsIwFEVnwdNOSUdHR0tJwRZGomEJSIg1INiEx5n4c20/hyQkM+TpHukVceLvO7bzYQhRDAUnqqHgRDUUnKiGghPVUHCiGgpOVEPBiWreR/DLwXx+rWxszffdlSnhvG/mZWNzMjdXNor7yax/12hldhdXRjqZRnBY+M+vgzm7Ys/tuK2+a7maXef7ZUPB/48ZBLexv7oXLc8EbwXQd3J73kNwf4joXWeJeQTPEtAt+MPclC/4Wwiu+Bewi8kFX2+czJBMSXAp6cV3WUJDHRvr48N+8DDfm7wM8aeWjzS5OIaz7zvcPmnb/rvngmb1bHuy4CParwqez9MG3KK4bjHgsCkOKDyI4jiH3xr/z+SC7y5xQbxwUwgeNk6IrS3D57YsCFwkrfxGTHwjRrVuE5j8HEFaDD/Xse0n6+zKwskshOuvU/BqfeF99uu5BGYQHJ9bmaYQPCwuLrivC2U+8VL7vsxvPEw8nk6xHGSDsZQ3hQPGEb+B07UQbmD7+TrjhoJ5SusRy/AWg/pB3vzEzp+XxTyCW1CwcP2/IHhY3F5lT05Sl0xRNDHpDbXyiLSRG9K5jm+/nGfcPOmmEMpFwYVfG4jqRlsQswkuL95fCd6dON+nNIak7kAB5Q2T9zO+/WKe8DxKcKgvRm0cC2JGwS1wVbYhCB7KIMEvCw5tJfKmyIJXRIU+aidb3KDy2IqNNbD93vPs/YtS22xI7CO0tSDmFdwSk9lETCjKUMargluKzeUjjqEmOLZXBkhZ0O/mGN3+oHnawHkVfbb9VPMgjXWBJ/rsgqdJT5OXyG8Xb7pfFAcmJ0QcQ1XwXwRZeyU4rdecxnI/I9ofME/pFkhlhlxImySMlSc4IW8LBSeqoeBENRScqIaCE9VQcKIaCk5UQ8GJYoz5AXNXjPsIdioxAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[strLote]</OutArgument>
+              </uix:NGetText.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Dados_cadastro]" DisplayName="Extração da coluna do número do pedido" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Número do pedido'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Rastreamento'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="636,156" sap2010:WorkflowViewState.IdRef="NExtractData_2" MaximumResults="0" ScopeIdentifier="156e7335-b2ae-47f8-bb53-068dc705f3c6" Version="V1">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/starttest.php?token=0cbc82bcdbf5b458f36bfa48f32e95f2" DesignTimeRectangle="113, 272, 1140, 4293" FriendlyName="'RPA Challenge'" FullSelectorArgument="&lt;webctrl tag='MAIN' /&gt;" Guid="40e47df4-d3de-4851-9469-4be3bb04ea96" InformativeScreenshot="cc7ec0d44032ceceeb79e6673043145c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:RemoveDataRow Row="{x:Null}" sap2010:Annotation.AnnotationText="Foi necessáirio remover a primeira linha, que seria &quot;Número do pedido&quot;, então, quando buscasse pela remessa daria erro." DataTable="[Dados_cadastro]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="636,242" sap2010:WorkflowViewState.IdRef="RemoveDataRow_1" RowIndex="0">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:RemoveDataRow>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Abrindo o documento .EXE" sap:VirtualizedContainerService.HintSize="636,3120" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="IfNotOpen" ScopeGuid="d35745c6-5abd-4b3a-bc8a-f611f1f4f347" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="602,2831" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Int32" Name="i">
+                        <Variable.Default>
+                          <Literal x:TypeArguments="x:Int32" />
+                        </Variable.Default>
+                      </Variable>
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Inserindo o número do lote" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="560,216" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="d35745c6-5abd-4b3a-bc8a-f611f1f4f347" Text="[strLote]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="131, 122, 193, 21" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd cls='Edit' idx='3' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="012961cc-f6a8-491e-8852-1697ffb341cb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMUAAAAZCAYAAACBxOqkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVHhe7dPRCYBAEEPBLdtObeM6OD8UxahYwM5AIA28GmNMM7smCrPYGUUtq1nrvUYBXYkCwm8UVXU86EEUEEQBQRQQRAFBFBBEAUEUEEQBQRQQRAFBFBBEAeE3CuhGFBBEAUEUED6jMOu8RxRmtk8UZreNuQFrvyMD75LUnQAAAABJRU5ErkJggg==" InformativeScreenshot="682a5a54ea8d54bdf3521803c4099872.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="27, 122, 79, 17" ElementType="Text" FriendlyName="'Número do lote'" FullSelectorArgument="&lt;wnd cls='Static' title='Número do lote:' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Número do lote:' check:text='Número do lote:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAVCAYAAAA6s9JxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGiSURBVFhH7VXRDcQgCHUq52Ebh3EXZ+kGHFhp1aJtcySXS/x4KdIH0qdQt20bLthgiWmIJaYhlpiGOMVMAb3zGFJFYJ8PmGRNSMGjg3hyfgGlriHecL9EJ6ZDV298KSRh8J3gv4ClmIZit2JS0gAeIbY+i41M8S9ipjq55rv4AYEOwNGt9iHmw3A0LiCmgwuebny+9bDf6iYOMHacKPvUqDieuuPooLvYvNeIy50ma51zdmFE4Folr4KrmGRHuZ3iqwuqufyUOdvbmd+NhT4uC75/kIivz+SOE6F8/IPYphaFe7yXfZR6JdcNVDHzKbAtvj6p5tdsfvIJN2ARB3HaesZ5E/skB9tavcftnGMg5n5yHuBdIb3NT601RnHaesZ5E/skB9s3rTzDUMx9RtDJZN8+L+SEuM3UQi52aa2wt5b6AU9aVePU+U3bXKlXct1gImZddLHLtQftxg5tHhmlZWSg93vR+uRU/hock/enHxDN9HqvaWxTi8aln2b2lRup1Vt4z39AC19jiWmIJaYhlpiGWGIaYolpiCWmIZaYZtjwAzVgAexsfeGjAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DelayAfter="6" DisplayName="Clicando em &quot;Carregar lote&quot;" sap:VirtualizedContainerService.HintSize="560,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d35745c6-5abd-4b3a-bc8a-f611f1f4f347" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="27, 146, 299, 25" ElementType="Button" FriendlyName="'Carregar Lote'" FullSelectorArgument="&lt;wnd cls='Button' title='Carregar Lote' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Carregar Lote' check:text='Carregar Lote' /&gt;" Guid="d62117ba-6448-4537-9d8a-6b6632eb72e2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS8AAAAdCAYAAAD7G+rKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIOSURBVHhe7drRkYMgFIVhe6IbmqEVGkgRlJIO0gELRBTuQszObmZF/odvooBXXnIGSJbH4+EBYDSEF4AhEV4AhlSF1+12A4DTKvPqW3jd73cAOB3CC8CQCC8AQyK8AAyJ8AIwJMILwJAIr8k4o71aFr9ESnltXXPcv3PGK2W8a/UBAeE1EWdUCCzjrVvbnPV6Ud7k+zP5SXgRdFMivKbhvAkrrVMGVQvhhQOE1yyOvuC22E6G1Zi2oS09o73WYcWWtpn5WofVm/Fa5e2n3kOxan+u9NI7D+uHmuV8evMV77UplPP9Or43N1wK4TWLXhi05LHxM24r47lYeS1XcVvtZ5Bs52i9d7bq98ZU7XX9tA3WVoztzS3XwFUQXrM4+hKHfh1XSnl1lMMlPyOv87hNDCHxDvHMy/pSq0+25fuyPV5X84qKMMNlEF7TECuSynpwL1dMMhSqgBDbPDmmun+jvtTq69Uv2+N1a264HMJrIv1fG+PnfjYU/07xcuWVt29Gbg/FtjGec6X2N+pLzb53t42tuZV1cAWE12Sq/3mF4NqDYG9XcXsnw0WGQAy8EBKpjjiw3+rnOu/Ul8o62RpU+3vzszYF1nbo35sbLoXwwse4sPJKgdPoA36L8MKfsvlvFax68GGEF4AhEV4AhkR4ARgS4QVgSIfhBQBnVeZVFV4AMArCC8CQCC8AA3r4Lzg262JKFz8JAAAAAElFTkSuQmCC" InformativeScreenshot="0c5471fbb5dd5caf3a93a3e0ae32f7a3.png" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Será executado um for, na intenção de percorrer todos os números de pedidos, carregar a informação de cada um e adicioná-la nos espaços em branco." DataTable="[Dados_cadastro]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="560,2089" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1926" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="remessa" />
+                              <Variable x:TypeArguments="x:String" Name="situação" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Cada iteração busca o próximo número de pedido armazenado" ClickBeforeMode="Single" DisplayName="Type Into 'Código referência'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,258" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="d35745c6-5abd-4b3a-bc8a-f611f1f4f347" Text="[CurrentRow(0).ToString]" Version="V1">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="131, 234, 193, 21" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd cls='Edit' idx='2' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="8038efa8-53e1-45f5-9a7e-9621e9e80212" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMUAAAAZCAYAAACBxOqkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVHhe7dNBDYAwAMBAdE/1HMCDBEIBBbtLKqHbnHOXdGcKKV1TjDGkpfucAlZlCghTQJgCwhQQpoAwBYQpIEwBYQoIU0CYAsIUEKaAMAWEKSBMAWEKCFNA/E4hrdxrCklnppAezf0Aqdp9NHmSElwAAAAASUVORK5CYII=" InformativeScreenshot="8c373b0ab67b73ab0e4322ff15841017.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="FuzzySelector, Image">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="27, 234, 90, 17" ElementType="Text" FriendlyName="'Código referência'" FullSelectorArgument="&lt;wnd cls='Static' title='Código referência:' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Código referência:' check:text='Código referência:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAVCAYAAADPTVnBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVFhH7VfRscQgCLQq67Ebi7EXa0kHPjBigKjJvbnEj/NjZ05YEVfEnNm2LS28jyX8JCzhJ2EJPwlC+OhdssYkg7A2uRAFOXqbjAvCVhF9stan2PI9hOAgH8jVhba/CcwT5lgv9/Y2qvBZVBAuxOKMITljk6fxFpOHwzjGCiT8aweA+bkUmr4+gsODgrmjvYzwpf1V4Yei3sHbFf/2el9GFX64Cdiks9SCWJUxu4WDwxsjKl7MK/5RPEKO4ZLLrQT8iu/zbSxjqvoT506cg+NL2zJwy2vrwnWIn+3QnjK/7COw1szn3biNN4THFoPXc++JR59XdkhCCi/9R8K9eGxN5GKbyxzV4igOF2DEuROHREU7isnzpLeAWm/g6zKIfK5xLbwOyBMe2T+dR2Ntw9+1qo7qEgJ8i8PX5jlwcDv8xreixmvxO7ju8TqBXmLa/uk8Gmsb/m5d2yc4fKzt2p/bCR4c3YgOv4MqfP+rptcaGnaRsPSfrvApXlkXITahr3zxPcJh9hNft5q9j1Ox4qf4vyoeIb7jYZEqGiRzPEoqycK38DidNsL8/ce1kSyPkcewycrnj+ITHDbmfNKD+ble9eMix9kPJVDMBoTwTyI/vr0/Xz+IR4Wnf5aiwhq8X8RrFb8gsYSfhCX8JCzhJ2EJPwlL+CnY0h8Ed/vJCtjj4gAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NClick ClickType="Single" DelayAfter="2" DisplayName="Clicando em 'Localizar remessa'" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d35745c6-5abd-4b3a-bc8a-f611f1f4f347" Version="V1">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="27, 258, 299, 25" ElementType="Button" FriendlyName="'Localizar remessa'" FullSelectorArgument="&lt;wnd cls='Button' title='Localizar remessa' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Localizar remessa' check:text='Localizar remessa' /&gt;" Guid="a8cb964d-be43-4535-a45f-551971373d58" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS8AAAAdCAYAAAD7G+rKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJWSURBVHhe7djNccMgEIZh9aRuaEatqAEXoVLcgTsg/C1aYbAOnmS0ynt4JsqaRfjAN+Dp9Xp5ALCG8AJgEuEFwKRDeD0eDwC4LJ1Xb+H1fD4B4HIILwAmEV4ATCK8AJhEeAEwifACYBLhdQfb4ud58Vvvs2/95tzAFwivO/iL8CLEcDGE1x1w8sI/RHjdwShgQt3Nk5+mYHZ+rfV1r0+zd+uW66vzc6pJPc/RnrxWJ2OiMu+w13nn5n1cen9Tb9a5bO2Yyc/L6pf0rNbb6wv1bck9aeySx/Zq3TXHOkwgvO4gbfQ2vDa/hI0tGz1tXrfuddnAMcjCxpWNX8mc7V81Zp9T9UW6J84tYaM/r/W4HvX+tleCTD+ndQz6nvH7lKBMffG5Vyt9ovY3dVwW4XUHvY3X1uT/T5s0fOZCIOSTSKDH9+bTIfCpV8aosbWe5ik9VQy2Zkz7POrbcjhPYS0unNa2FG69Wp7rbc2xDhMIrzvQm3tU05u+u0nLCUxdyQ7jD33l9FavWSe9aYyi6/H57CTUex71iXCizNdMHbC6NlizjMXlEV530N14EjB5c55fG/PVSq5h2+KGJ6/36+JJbx1XHOrtet7fdxhfnwd9Ekr1xCXfrVfrrDnOBRMIrzuIG/dwfQpiuIT6/oO22phx40o9bOo94PYfsOd4nYo9EgpNaNT3lFD42Cvvre9v6no9hx/sy5jhc6cv1A9rKeF2WpM1x3lhAuEFwCTCC4BJhBcAkwgvACYRXgBMIrwAmHQaXgBwVTqvDuEFAFYQXgBMIrwAGPTyPwFvbUKdV7iyAAAAAElFTkSuQmCC" InformativeScreenshot="39fa653513a110c8c4a1d8996ff14e53.png" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetText sap2010:Annotation.AnnotationText="Armazena o número de rastreamento na variável &quot;remessa&quot;" DisplayName="Get Text 'Remessa'" sap:VirtualizedContainerService.HintSize="484,198" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="d35745c6-5abd-4b3a-bc8a-f611f1f4f347" Version="V1">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="357, 140, 189, 17" ElementType="InputBox" FriendlyName="'03-00016984'" FullSelectorArgument="&lt;wnd cls='Edit' idx='4' /&gt;&lt;ctrl name='Destinatário:' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;&lt;ctrl name='Destinatário:' role='editable text' automationid='' /&gt;" Guid="d9085624-8d19-44e5-99c2-ffaf999980b4" InformativeScreenshot="05b55044393a647cb50704a948b5193e.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="FuzzySelector">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="355, 122, 51, 17" ElementType="Text" FriendlyName="'Remessa'" FullSelectorArgument="&lt;wnd cls='Static' title='Remessa:' /&gt;&lt;ctrl name='Remessa:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Remessa:' /&gt;&lt;ctrl name='Remessa:' role='text' automationid='' check:text='Remessa:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAVCAYAAADiv3Z7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFCSURBVFhH7VTBEcQgCLQq6qEbi7GVjLXYAQcYOTUx5nEfc7mZneHWrLKAupQSPRWvuVXxJ+aiJ3COXAMgDK1gJbTmwFOsFmPAA7cSLs2lFAgdUmi4dXC/c7yOsI8rIPlYNEiIoDz4QF5jGedo+x50srfPGv3W52/PuCQ5KLfzdk3mhb++c5xM0GQieQBLzAqhmp3vYy3KQFcnpjqJz7hdV2D6jh9g3LnIXeDEtFJ6WGdcjIRKU+tLPNJFMc2x7M/djlbAnst7IXOm/4k5AY+Ew7Cbm1TyLB7pCqSAOsbVNw0n3ZQifkf8kOMFbj4ouap2D+rke0NNPNCVpK1jEo+4+p5yscsZNzAxVw6RdT6ofxim5gY65iXRMrJgD8qEk/G0HLNx6/gJvuYeiNfcqnjNrQozt23b49CYe9rvYK78Xx+JPraX0QKIXHbvAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:String">[remessa]</OutArgument>
+                              </uix:NGetText.Text>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                            <uix:NGetText sap2010:Annotation.AnnotationText="Armazena a situação na variável &quot;Situação&quot;" DisplayName="Get Text 'unchecked'" sap:VirtualizedContainerService.HintSize="484,187" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="d35745c6-5abd-4b3a-bc8a-f611f1f4f347" Version="V1">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="355, 218, 393, 24" ElementType="Text" FriendlyName="'Postado'" FullSelectorArgument="&lt;wnd cls='Static' title='Postado' /&gt;&lt;ctrl name='Postado' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Postado' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="81ac4853-ddcc-4e01-9f3a-59468a6d8e29" InformativeScreenshot="6bf62971c8dbc5431700f71c3dec0c59.png" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="FuzzySelector">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="347, 98, 409, 193" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd cls='Button' title='Informação da remessa' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Informação da remessa' check:text='unchecked' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:String">[situação]</OutArgument>
+                              </uix:NGetText.Text>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                            <If sap2010:Annotation.AnnotationText="Só informa o número de rastreamento caso o campo esteja vazio" Condition="[CurrentRow(1).ToString = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="484,575" sap2010:WorkflowViewState.IdRef="If_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="376,366" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="A intenção era completar os dados que estavam faltando, porém só digitou no primeiro campo, não consegui fazer com quê mudasse o campo" ClickBeforeMode="Single" DisplayName="Type Into 'Rastreamento'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="334,273" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="156e7335-b2ae-47f8-bb53-068dc705f3c6" Text="[remessa]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/starttest.php?token=0cbc82bcdbf5b458f36bfa48f32e95f2" DesignTimeRectangle="805, 427, 186, 38" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" Guid="6782ab67-a87d-4851-82c4-7158e7a16265" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL4AAAAqCAYAAAANg+HIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVHhe7d2xSgNBGIVR3//hgoWkUCxSWIlgo9gsEy6YZYUN1jv3HPibzJTfhKl2HgYUEj6V/oT/9f0zXi9v4/H8Mk5Pz8YcftJymk7bW2v4Wcim94/PsSzL769wbGk5Taftbfxr+DkV2QAzSttp/GYNPyfCPz2zSttp/GYNP/chmNm2ceFTQ/hUEj6VhE8l4VNJ+FQSPpWETyXhU0n4VBI+lYRPJeFTSfhUEj6VhE8l4VNJ+FQSPpWETyXhU0n4VBI+lYRPJeFTSfhUEj6VhE8l4VNpN3yfCWdmdz8T7mEIZnb3YQhPATGjtJym0/buU0CRhZyKbMp9yJijT1pO09voQ/hm6vk3/Cxkk6sOM9m/6oxxBSYRAGp57YwoAAAAAElFTkSuQmCC" InformativeScreenshot="5aa204019f1fee7149bbc7185efaeb6b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos' /&gt;" SearchSteps="FuzzySelector, Image">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="790, 403, 216, 24" ElementType="Text" FriendlyName="'Rastreamento'" FullSelectorArgument="&lt;webctrl aaname='Rastreamento' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Rastreamento' tag='DIV' type='' check:text='Rastreamento' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANwAAAAcCAYAAAAKstE1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALCSURBVHhe7ZexTuQwEIZ5YFrK6+jotqWk4BWQaHiC00p7XAGioEAITiddA6JZ+TKJ7ZmJJ87COs5G/J80jeM4jvf/7OyRAwBUA8IBUBEIB0BFIBwAFYFwAFQEwgFQEQgHQEUgHAAVgXAAVKSccJtLd3zyw6zzje8DwDeninBUJaV7vl51417c+pbvw/qiW8/T61ffApbEBMKt3NVLv62kHK/u6qz0mEvh1p379YRwy2Ra4URAWA4hjCh9Aor7QtH9LzfutN/eFIUvnnonl24d5nJ24579iHzdl5TVHLcZx18mwsnSjqn6+37qhNf3EvF+X1IYNffeu8d1UeMb14fWDBwUkwonQ54Nhq+uz8D1nYUT5YXrhz1WCORAmKU4LNwqnYPVFsNubzBUQTqeezNO0tcSmqtds8H5NyU2HTA/df7DZXfa3ieikIolldiflFI49blljRfb0pOoxbiHpQ0bihap6yfaQtCNjSi2+T7W3Mc2K35H45mE+D3sdQRzML1whmz5E0cHmdsDY8LJT9qG3EYQ+46duvKE41Dv0ibFSasTnvuIDcDceCzhrDZiqB3MyXSflCIw+ZPIFiiVMoRxTDh9auUDT2GWgqdz31e49D1kdc/bSzjRD8IdPtX/w4UAcgg4GPok8yTjfk44ecJxcCXh+Txv656vCsfzEuP32Es4uR5iHuPvDeZgUuFUGHyYsjs+CSRPRllWqH1R+AaFU3PQ1YVWCG/UvsLlxg9j7y5c+i7tNSFXUlJCMDsTC9cgBWp/fB0a9Uk3JFwSGh3ivHAdlujxlFDPbO43wv514Qhb+s8L19Bbn3jNWDc+BcGhUE44AMAoEA6AikA4ACoC4QCoCIQDoCIQDoCKFBPu7f3DPTw+ufXve/fz1x0KtfiiLFOmKdulKCIcTYgm9+fvP7fdbn0rAMuGskyZpmyXkc65/+EINRrjMN6zAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NTypeInto>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Preenche o campo de situação e aperta enter. não consegui fazer o target mudar." ClickBeforeMode="Single" DisplayName="Type Into 'Situação'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="484,258" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="156e7335-b2ae-47f8-bb53-068dc705f3c6" Text="[situação + &quot;[k(enter)]&quot;]" Version="V1">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/starttest.php?token=0cbc82bcdbf5b458f36bfa48f32e95f2" DesignTimeRectangle="1021, 427, 186, 38" ElementType="DropDown" FriendlyName="'PostadoEm transferência…'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' aaname='' /&gt;" Guid="628d42af-6047-45a2-ae26-0831ba4e4fa4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL4AAAAqCAYAAAANg+HIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFpSURBVHhe7d0xSsRAAEZhr2dn5yFstNELLSjsXcRCLBQLCysRLKLYLCNPsjEJZGM7878PBjaZKd8sU2WOihTI8BVpEv7n13d5fnktdw9P5fb+0eGoetAxPdP13BA+kyx8e/8ou92ufyvVi47pma7n8Q/hszNYJLWGrul7bAifXeE/vVpE1/Q9NoTPmUhq1bxvw1cEw1ckw1ckw1ckw1ckw1ckw1ckw1ckw1ckw1ckw1ckw1f1Ntfb0nVd//SHd5ubbf80ZfiqGtEfn5yWs4urSfz85h1zrJkzfFXtN/Dzy0n84+iZG2+IPcNX9ebxr0UPw1cTxvGvRQ/DVzP28a9FD8NXUwh+LXoYviIZviIZviIZviIZviIZviIZviIZviIZviIZviIZviIthu9nwtWqg58J92IItergxRBeBaTW0DE90/XiVUBgkp3BQs5EDkfNg47peR49DN/R7PhX+Eyy0KOOWrF81CnlB2Au0+8Q4qlyAAAAAElFTkSuQmCC" InformativeScreenshot="02ae3054fe0c0d93e18fd22bef271af3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos' /&gt;" SearchSteps="FuzzySelector, Image">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="1006, 403, 216, 24" ElementType="Text" FriendlyName="'Situação'" FullSelectorArgument="&lt;webctrl aaname='Situação' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Situação' tag='DIV' type='' check:text='Situação' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANwAAAAcCAYAAAAKstE1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJdSURBVHhe7ZixThwxEEDzwWlT0tHR0VJS8AtINPcF6KQDikQpUkQIokg0RGlO5uzz2rP2+ARoznuw70lTrNe762KeZ9ZfHAB0A+EAOoJwAB1BOICOIBxARxAOoCMIB9ARhAPoSEfhbt3ZtyP3dRNnqzgEMDNMhbu/Og1CjePCLf3N1UUaO756DPMPgrSuU3f5EK9PFu5+exfAFCPhHt3liZRMRhSuUeGSpOe3caQvy/NhA8jrO6gNAT4VNsI1q5cXcRBOQ4g6kXAAPdmzcIKHhTuOc0KFE9cy/PO5NRWylq3faEyE1g5W8+I71DVoG0SufinYIOAdGLWUdUJWByN7EE7/Z9yEkE6fI/7Xqns+tO8qwb8evBHDQxOlCmwiiVcKF9BbyldXuJJyjpRaVqTVQn9HtUaxPimXkLDaWAB2YCjcQClenfxmwjWqZF3BWpLqm4SP7Rrz/XGr3BoH2M0ehNsiW7mQlObCSVnivGJOfo8mnPj2cL9co7hGOLDA7tCkOESQwpXJ+3rhsij++H40lt6XpayeE9+sW8pBGiFjEnZYIy0l2GInXEzAOqIQqnBSpG2EirHzfYpMVWiilvdlhawjrXHXWjg0gTdi1FI2kldWlYZw5bNDiyYrZEjslPh6RWrO2TB6V4h6EwhjrTUqctNKwnvY2z/cwRFkzO0nwBTMTDilegF0ZD7CeWJrSDsIUzEb4fLhCW0lTMe8KhzAxCAcQEfMhHv+99/9/PXbLe9+uOub7wTxocPnsc9nn9eWmAjnF+UX+Ofvk1uv13EU4OPi89jns89rO+mcewFcqmak+5ZrIwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEachRow>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Atualizar pedidos'" sap:VirtualizedContainerService.HintSize="560,156" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="156e7335-b2ae-47f8-bb53-068dc705f3c6" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/starttest.php?token=0cbc82bcdbf5b458f36bfa48f32e95f2" DesignTimeRectangle="144, 649, 149, 38" ElementType="Button" FriendlyName="'Atualizar pedidos'" FullSelectorArgument="&lt;webctrl aaname='Atualizar pedidos' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Atualizar pedidos' tag='BUTTON' type='' check:text='Atualizar pedidos' /&gt;" Guid="4d41ad0f-053c-45c0-b81a-b900c0306dde" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAAqCAYAAACgAvlhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOXSURBVHhe7Zw9ktQwEIVJOBeH2pAqTrLXINwbQDoZIQnJhoRGT3Srntotj2dssTC8V/VqxpJG6p/P3o38bpGkyRJk0nR1kH35viwfnpfl/acy8VGW9xvMgB0wFNUgw6Tgko8aDEXQGmSgMPuRLN9qsMRqkOkpJp9lsMRqkGWLZfleswSZPMUsQSZPMUuQyVPMEmTyFLMEmTzFLEEmTzFLkMlTzBJk8hSz/n3IPi/La4n/pXzW66+/82nXD+CXnyXHb/318qNfE/1c5q+tmWnWeZBZs7kYf8SCLPVDQoakXpF88VMy/1SKNJo75AjZAzpCtscPCdml7IFG4/NSniZxXpDdb0EG40+UAVRhCsnVxztrY20GTS0YqYM4rrc/l882D+gz+foaA6lrpu9d9sQn5Pt2phi6XJMmx/NWN6Tt5UI8EbIMui7Pcm4KmdWmyfrAazZrfYNZp0DWJU0F5zXZk2wXZOXzwgW1QvF8t97mUxiK45P2wufbXm3erq8+gX1dEeddG0/7r2owOI/j86ZvQYZz+LqBHM8u4vh8b6/VKr4Sx98BmRWGg8/utFUCPsZNhpP9ojtQ4voyDmWQIa7VecHZDXO10KN1IRbEHfPiJ0769CmO9eTrrK5w3CveXNn46Px7zDoMWQbKEKhsLCYVoaEx1q2Q1bOScRiFZkXItoCvHq3jcfueymoAeDIQtiADGDzn7oCxs7Pcu99TjFdzvmLWYchig1hcsHshq8Wia7i7K8P6FLK4xuzgcZxdQwe/W3m0jsfte9Zo95tD5rYaQldzH5h1DLKsoWYUggEaQhbGfE9PLnvM3wpZbNLWeDcW9x55sC7ml+XCjjVz43ccJ8dYYaIzeA3vNTp7K6asPnvNOgRZd7dEx2YnzffmcJJIGvKGxUTrmUV7IRs1oc1R/P5kuxcyqOVnY1nsXAOcGWPnevhveJ+uJsk5nkeWG+cSa4Nrju3tIbPkRncBnN2BVZRYK4jp2fZtxbBrF87r7r643hpVi2XfM/l6hxpCrFkDuTGpfV05j2PNGuTQNBEI1SFm5BmbvWq+ne/CXD0n7B1rHedjbFn8e806/D+ZXLwXxv/ILEF2hgXZyixBdoYF2cosQXaGBdnKLEEmTzFLkMlTzBJk8hSzBJk8xSxBJk8xq0GmV0fJZ3n46ii9BE8+y8OX4Ol1nvIZBkPD13lCmASFgk2+1WAG7ETAoA4ySZohQSZN1rL8Ar8mkidgBQ4qAAAAAElFTkSuQmCC" InformativeScreenshot="f43140614c1da4a85788e46272c8a9ee.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos' /&gt;" SearchSteps="FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="144, 605, 1078, 28" FriendlyName="'Finalizar'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;h6' idx='3' tag='H6' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' aaname='Finalizar' tag='H6' check:text='Finalizar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABDoAAAAgCAYAAADzLxhXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPgSURBVHhe7d2/S5x3HAfw/isOQjKd020pWcRBEWoQaqaGDEoHQ4ajHYIOYiHicEOGgNBBuOHgliIUEUQOJDok3FAIBEkpGhowUDAQuCHw6fM895w/cjGmrVfI4+sFH/D5/nq+rm+e7/e+CgAAAICCEHQAAAAAhSHoAAAAAApD0AEAAAAUhqADAAAAKAxBBwAAAFAYnx10tFvVGB4citv1g7zlkjxdioHB63Gn8SZ77Nt7AAAAgMI7CTpeN+LO4PUsdDhbS/Es6W63HsdYqRwza51A4tL0BB19eg8AAABQeL1Bx2QllqvVU7UR+/mQvvgg6AAAAAD4t3qDjoetvOF/IugAAAAALsnnBx09gUQrFtPxdxux96IRc5PlrL80uRDrr/IhifarZqxUpqJcSo/BJP0js/Fo51So8eG6HzwfNqaz554qVbMjNdE+iK2VSty6MdRpL4/GzKPdOHyfTT9Z7+e1WJm+EdeSvxef5n0AAABAofz3oOPmaIxNPojVzWbUf5rKgoSBydrxcZfDxmzcnq/FL9u78WSzFj+MJP2DU7H6Rz7ggqCj/aoVT9K5WTVjtXIj6R+KuWY760/3PfPdQqyu5f0/jmbzb9Xyy0zz9QYGR2Nx522nDQAAACikiy8j7QYf5wUdpYXYepc3xZuo303nVWL9KG/qflmRazcXsnXu/ZqHDhcEHae1k77hpG842VMec/Ssn7wg5tJ93d+IbAvdoGO+eTIHAAAAKKSLLyPdOPtlRE/QcbcRh3lL6tnDNOiYjvrrvOHoZWzVqjH3/USMjXeOjnwy2Dgv6Hi3G4s30/3VYu90uPH+bext1mJ5fjbGvpk4PiJzvK/z1gMAAAAK51Lu6Dg36Gi3Yjk9qjIyGyvp0ZLfDuJos/NFxz8KOt4fRH16KAZKybqn7v9IXhDPqulRldGYWVmLJ9vPY/+v/IsOQQcAAABcOf0NOj4SMnQvFz032PjInP16Omfo5LjLsY/soft/CDoAAADgyulv0PH8cXydjLk2vhT17d3Yqj2IO+Ody0I/N+jo3ssx8G011o8vJU3rZRzF83iUHmcpTcRiI2lLLzudnuiMF3QAAADAldPfoCPasVerxHA5bSvHrfmN2N/5dLBx9jkPMtL39NRS9vOy7Re1uDdy+qdtd8/uS9ABAAAAV8ZJ0AEAAADwhRN0AAAAAIUh6AAAAAAKQ9ABAAAAFIagAwAAACgMQQcAAABQGIIOAAAAoDAEHQAAAEBhCDoAAACAwhB0AAAAAIUh6AAAAAAK4zjo+H3/T6WUUkoppZRSSqkvsrp80QEAAAAUhqADAAAAKIiIvwEPDmr6VxonCwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="475, 310, 768, 304" FilePath="C:\Users\Computer\Documents\Teste EloGroup\stlog.exe" IconBase64="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" InformativeScreenshot="8bde8a35c33fd8e0792ce1188d0617e7.png" Selector="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00'/&gt;" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMSSURBVDhPZVNvTI1xFH7uvZVKLGXrpqSr8cFqFcsWk7YKm82fSnc1a6Fu61YrW+GKW1OIS5NoYm01WURCsUXC8MWfZdKM1SfLNH83fMjweOouHzjvnvd9t985zznnOb+DKVvk/hjT9esCHKeAO+eBVy1CNvBgFrBP5xuF5YJF8BbcliLMAXzkseU2MPAEGH9pMnHAw4MOHx8uDTZzpt/0H3L7IrwVnglHhVCs1dtfbPXAjkHg85inJ/tiY9mVn8/ylBQW5uWxYq+Laek2zp4dRLlP4btQMPlXAWQOAB++6uCNvz9v7d/PvdXVtGZlsbX1HK3WXczOrmJy8gYaDH8JJiqqQCIQ1gPcH1XmYYuF37y8+CI0lOmRkUxSBR0dHWxp6WJz8zWWlzsYFmahh4fnBME3IUcPcruBr70REbx67BivR0fzkzLckAbLAgNZUFgokgvs6enmgQMnmJPjZHx8Er2MhvEAYA8OAk2Pgd93N2/m65ER1qv0ewkJ/KhKLoooWiJaRF5ZWUmX6wzt9lrudNRwoY83k4GbOALceG4w8JHTydGxMdapijKbja1qZ0QEbcJCTWOT1crOzsu81XeXpXk2bjUZmQ88QS3Q/VQE3VK9obFRYmUzZO5cBihot4I1GTYLiyXuqjVraCsoYMXq1TylFrcBj1GoFi4Bv5xRUSwrK2NRURFjYmImlQ6UsI3z5/OZ2jktwo0a756qKp5ITeVhnetWXUMmkN4FfKydMYNBAQEak4EmsUeob3NwMEtzc3k2Lo79CmgPCWFzSQld4eHcoXuQBBQjEgg8Dly2ymEi6xRS09KYkZExqUmlKjupCntVSbuvL+uUYCvwcB4QgTp5bwASw4HhqeBZfn7MysxkfUMDB4eG2NffzyaHg21mMxt1XgK8WwFsku9fMxqBjAkS7QVLvb25fcECtkvQK3Y7z0i0Qwp2KXOxdkHjsytmmipwm9n9Ma0EVsqhsxp4XwP8bBKZ2qNTItu0J9rK3nhgnXy9gt0x/1uINFmirhKAk2qtcz3QpYz1UdqXUOCfOOAPd/Rqo6OCYEIAAAAASUVORK5CYII=" InformativeScreenshot="00a33a0d2c17ff4582fb798138c7e7e5.png" Selector="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos'/&gt;" Url="https://marcelstein.com/elochallenge/starttest.php?token=0cbc82bcdbf5b458f36bfa48f32e95f2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
